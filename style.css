@@ -560,8 +560,8 @@ li ul {
 .news-item {
 	display: flex;
 	align-items: flex-start;
-	gap: 15px;
-	padding: 15px 0;
+	gap: 12px;
+	padding: 10px 0;
 	border-bottom: 1px solid #e9ecef;
 	transition: background-color 0.2s ease;
 	opacity: 0;
@@ -599,24 +599,25 @@ li ul {
 	background-color: rgba(255, 255, 255, 0.7);
 	border-radius: 8px;
 	margin: 0 -10px;
-	padding: 15px 10px;
+	padding: 10px 10px;
 }
 
 .news-date {
-	flex: 0 0 100px;
+	flex: 0 0 85px;
 	font-weight: 600;
 	color: #2c3e50;
 	background: #ecf0f1;
-	padding: 4px 8px;
-	border-radius: 6px;
-	font-size: 0.9rem;
+	padding: 3px 6px;
+	border-radius: 4px;
+	font-size: 0.85rem;
 	text-align: center;
 }
 
 .news-content {
 	flex: 1;
-	line-height: 1.6;
+	line-height: 1.5;
 	color: #2c3e50;
+	font-size: 0.95rem;
 }
 
 .venue {
@@ -753,13 +754,19 @@ li ul {
 }
 
 .pub-image {
-	flex: 0 0 120px;
+	flex: 0 0 33%;
+	max-width: 33%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .pub-image img {
-	width: 120px;
-	height: 80px;
-	object-fit: cover;
+	max-width: 100%;
+	max-height: 220px;
+	min-height: 80px;
+	width: auto;
+	height: auto;
 	border-radius: 8px;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 	transition: transform 0.2s ease;
@@ -822,6 +829,25 @@ li ul {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 10px;
+}
+
+.paper-link {
+	background: #3498db;
+	color: white !important;
+	padding: 8px 16px;
+	border-radius: 6px;
+	text-decoration: none;
+	font-size: 0.9rem;
+	font-weight: 500;
+	transition: all 0.2s ease;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.paper-link:hover {
+	transform: translateY(-1px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+	text-decoration: none;
+	background: #2980b9;
 }
 
 .project-link {
@@ -1077,6 +1103,12 @@ li ul {
 	.pub-image {
 		flex: none;
 		align-self: center;
+		max-width: 60%;
+	}
+
+	.pub-image img {
+		width: 100%;
+		max-height: 160px;
 	}
 
 	.news-date {
@@ -1114,6 +1146,14 @@ li ul {
 
 	.publication-item {
 		padding: 20px;
+	}
+
+	.pub-image {
+		max-width: 80%;
+	}
+
+	.pub-image img {
+		max-height: 140px;
 	}
 
 	.pub-title {
