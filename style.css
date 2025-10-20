@@ -327,16 +327,29 @@ li ul {
 }
 
 .contact-info {
-	margin-top: 30px;
+	margin-top: 25px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.email-cv-row {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	flex-wrap: wrap;
 }
 
 .email {
 	display: flex;
 	align-items: center;
 	gap: 8px;
+	color: #5a6c7d;
 	font-size: 1.1rem;
-	margin-bottom: 20px;
-	color: #2c3e50;
+}
+
+.cv-button-container {
+	margin: 0;
 }
 
 .social-links {
@@ -358,6 +371,35 @@ li ul {
 	width: 32px;
 	height: 32px;
 	border-radius: 4px;
+}
+
+/* CV Button */
+.cv-button-container {
+	margin: 0;
+}
+
+.cv-button {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	background: #3498db;
+	color: white !important;
+	padding: 8px 16px;
+	border-radius: 6px;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 0.9rem;
+	box-shadow: 0 2px 6px rgba(52, 152, 219, 0.2);
+	transition: all 0.2s ease;
+	border: none;
+	cursor: pointer;
+}
+
+.cv-button:hover {
+	transform: translateY(-1px);
+	box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+	text-decoration: none;
+	background: #2980b9;
 }
 
 #header h1 a {
@@ -1137,6 +1179,10 @@ li ul {
 
 	h2 {
 		font-size: 1.8rem;
+	}
+
+	.category-title {
+		font-size: 1.5rem;
 	}
 
 	.profile-photo img {
